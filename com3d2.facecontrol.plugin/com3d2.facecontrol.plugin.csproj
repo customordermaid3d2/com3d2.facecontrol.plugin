@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63CA1FE0-1F06-425B-91C3-F2B95B6283F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com3d2.facecontrol.plugin</RootNamespace>
+    <AssemblyName>com3d2.facecontrol.plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="com3d2.facecontrol.plugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>F:\COM3D2.1.32.1\COM3D2x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>F:\COM3D2.1.32.1\COM3D2x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>F:\COM3D2.1.32.1\COM3D2x64_Data\Managed\Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="CM3D2.EditMenuFilter.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\CM3D2.EditMenuFilter.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="CM3D2.EditMenuSelectedAnime.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\CM3D2.EditMenuSelectedAnime.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="CM3D2.Toolkit">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\CM3D2.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CM3D2.VSyncFix.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\CM3D2.VSyncFix.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="cm3d2.yasdplus.noscenescheck.plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\cm3d2.yasdplus.noscenescheck.plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.AddModsSlider.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.AddModsSlider.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.AddYotogiSlider.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.AddYotogiSlider.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.AddYotogiSliderOld.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.AddYotogiSliderOld.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.AddYotogiSliderSE.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.AddYotogiSliderSE.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.AlwaysColorChangeEx.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.AlwaysColorChangeEx.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.AssetCleaner.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.AssetCleaner.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.Atcc.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.Atcc.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.AutoConverter.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.AutoConverter.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.AutoConverter.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.AutoConverter.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.BodyCategoryAdd.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.BodyCategoryAdd.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.BodyCategoryAdd.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.BodyCategoryAdd.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ColorPaletteHelper.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.ColorPaletteHelper.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.DistortCorrect.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.DistortCorrect.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.DistortCorrect.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.DistortCorrect.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.EditMenuFilter.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.EditMenuFilter.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ExternalPreset.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.ExternalPreset.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ExternalPreset.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.ExternalPreset.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ExternalSaveData.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.ExternalSaveData.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ExternalSaveData.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.ExternalSaveData.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="com3d2.facecontrol.plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\com3d2.facecontrol.plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.FastFade.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.FastFade.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.HalfUnDressing.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.HalfUnDressing.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.LILLY.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.LILLY.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.MaidFiddler.Core">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.MaidFiddler.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.MaidFiddler.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.MaidFiddler.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.MaidVoicePitch.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.MaidVoicePitch.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.MaidVoicePitch.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.MaidVoicePitch.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.MaidVoicePitch.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.MaidVoicePitch.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ModLoader.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.ModLoader.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ModLoader.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.ModLoader.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ModMenuAccel.Hook">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.ModMenuAccel.Hook.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ModMenuAccel.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.ModMenuAccel.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.MTAccelerator.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.MTAccelerator.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.MTAccelerator.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.MTAccelerator.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.MTAccUtil.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.MTAccUtil.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.PartsEdit.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.PartsEdit.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.PhotoModeAutoLoop.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.PhotoModeAutoLoop.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.PhotoModeDictionary.plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.PhotoModeDictionary.plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.PluginManager.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.PluginManager.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.PoseStream3.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.PoseStream3.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.PresetLabeler.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.PresetLabeler.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.PresetLabeler.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.PresetLabeler.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ProcScriptBinIgnore.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.ProcScriptBinIgnore.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.PropMyItem.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.PropMyItem.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.QuickEditStart.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.QuickEditStart.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.QuickEditStart.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.QuickEditStart.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ScriplayLilly.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.ScriplayLilly.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.ShapeAnimator.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.ShapeAnimator.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.SkillCommandShortCut.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.SkillCommandShortCut.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.StudioEx.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.StudioEx.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.StudioEx.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.StudioEx.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.StudioKeyboarder.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.StudioKeyboarder.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.UnityInjector.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.UnityInjector.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="com3d2.vibeyourmaid.plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\com3d2.vibeyourmaid.plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.VoiceNormalizer.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.VoiceNormalizer.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.VoiceNormalizer.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.VoiceNormalizer.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.VoiceNormalizer.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.VoiceNormalizer.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.XtMasterSlave.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.XtMasterSlave.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.XtMS.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\COM3D2.XtMS.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="COM3D2.YotogiUtil.plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\COM3D2.YotogiUtil.plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="ExIni">
+      <HintPath>F:\COM3D2.1.32.1\COM3D2x64_Data\Managed\ExIni.dll</HintPath>
+    </Reference>
+    <Reference Include="IMGUITranslationLoader.Hook">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\IMGUITranslationLoader.Hook.dll</HintPath>
+    </Reference>
+    <Reference Include="IMGUITranslationLoader.Managed">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\IMGUITranslationLoader.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="IMGUITranslationLoader.Plugin">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\IMGUITranslationLoader.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="IMGUITranslationLoader.Sybaris.Patcher">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\IMGUITranslationLoader.Sybaris.Patcher.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Inject">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\Mono.Cecil.Inject.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="MsgPack">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\MsgPack.dll</HintPath>
+    </Reference>
+    <Reference Include="PlanarRealtimeReflection">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\PlanarRealtimeReflection.dll</HintPath>
+    </Reference>
+    <Reference Include="PluginExt">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector\PluginExt.dll</HintPath>
+    </Reference>
+    <Reference Include="Sybaris.Loader">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\Sybaris.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>F:\COM3D2.1.32.1\COM3D2x64_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityInjector">
+      <HintPath>F:\COM3D2.1.32.1\Sybaris\UnityInjector.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
